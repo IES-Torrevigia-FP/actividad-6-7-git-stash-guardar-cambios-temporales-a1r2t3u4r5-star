@@ -1,0 +1,30 @@
+artur@artur-VirtualBox:~/dev/actividad-6-7-git-stash$ echo "Notas temporales" > notas-temporales.txt
+artur@artur-VirtualBox:~/dev/actividad-6-7-git-stash$ git stash -u -m "Incluye archivo no trackeado"
+Directorio de trabajo y estado de índice On main: Incluye archivo no trackeado guardados
+artur@artur-VirtualBox:~/dev/actividad-6-7-git-stash$ git status
+git stash list
+En la rama main
+Tu rama está adelantada a 'origin/main' por 3 commits.
+  (usa "git push" para publicar tus commits locales)
+
+nada para hacer commit, el árbol de trabajo está limpio
+stash@{0}: On main: Incluye archivo no trackeado
+stash@{1}: On main: WIP login paso 4
+artur@artur-VirtualBox:~/dev/actividad-6-7-git-stash$ git stash pop
+Ya está actualizado.
+En la rama main
+Tu rama está adelantada a 'origin/main' por 3 commits.
+  (usa "git push" para publicar tus commits locales)
+
+Archivos sin seguimiento:
+  (usa "git add <archivo>..." para incluirlo a lo que será confirmado)
+	notas-temporales.txt
+
+no hay nada agregado al commit pero hay archivos sin seguimiento presentes (usa "git add" para hacerles seguimiento)
+Descartado refs/stash@{0} (9f4eab1e320a24b9234b6106594241716a7edb7e)
+
+
+
+EXPLICACIÓN:
+git stash normal solo guarda archivos ya trackeados.
+Con la opción -u (--include-untracked), también se incluyen archivos no rastreados.
