@@ -1,0 +1,9 @@
+artur@artur-VirtualBox:~/dev/actividad-6-7-git-stash$ git stash list
+stash@{0}: On main: WIP login paso 4
+stash@{1}: On main: WIP login paso 3
+
+COMANDO USADO:
+git stash apply stash@{1}
+
+EXPLICACIÓN:
+Los mensajes descriptivos permiten identificar fácilmente el contenido de cada stash y elegir cuál aplicar sin confusión.

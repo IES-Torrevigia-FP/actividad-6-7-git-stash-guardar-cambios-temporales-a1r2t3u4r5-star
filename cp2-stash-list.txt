@@ -1,0 +1,11 @@
+stash@{0}: On main: WIP login pasos 1 y 2
+
+
+4297050 (hotfix) Aplica hotfix urgente
+41b019c (refs/stash) On main: WIP login pasos 1 y 2
+78277b7 index on main: 0e3aad9 Define tarea principal de login
+0e3aad9 (HEAD -> main) Define tarea principal de login
+7d9f16a (origin/main, origin/HEAD) add deadline
+e86c405 Initial commit
+
+Los cambios se guardaron en el stash y no aparecen en el árbol de trabajo mientras trabajaba en la rama hotfix.

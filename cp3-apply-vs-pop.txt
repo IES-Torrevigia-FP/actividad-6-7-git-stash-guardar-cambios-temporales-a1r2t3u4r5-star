@@ -1,0 +1,25 @@
+Antes:
+artur@artur-VirtualBox:~/dev/actividad-6-7-git-stash$ git stash list
+stash@{0}: On main: WIP login pasos 1 y 2
+
+Después: 
+artur@artur-VirtualBox:~/dev/actividad-6-7-git-stash$ git stash list
+stash@{0}: On main: WIP login pasos 1 y 2
+
+git stash pop
+error: Los cambios locales de los siguientes archivos serán sobrescritos al fusionar:
+	tarea.txt
+Por favor, confirma tus cambios o aguárdalos antes de fusionar.
+Abortando
+
+Lo que hize:
+git stash drop stash@{0}
+Descartado stash@{0} (41b019c582609482615d251f598b31d17161bb74)
+
+
+git stash list
+está vacío
+
+EXPLICACIÓN:
+git stash apply aplica los cambios pero mantiene el stash.
+git stash pop intenta aplicarlos y eliminarlos, pero falla si esos cambios ya existen.
